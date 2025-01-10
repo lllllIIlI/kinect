@@ -1,0 +1,5 @@
+<Grid>
+  <Image Height="417" HorizontalAlignment="Left"
+         Margin="12, 12, 0, 0" Name="image1" Stretch="Fill"
+         VerticalAlignment="Top" Width="594"/>
+</Grid>
