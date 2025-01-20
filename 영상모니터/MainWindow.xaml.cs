@@ -15,7 +15,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Microsoft.Kinect;
 
-namespace KC01
+namespace KC02
 {
     public partial class MainWindow : Window
     {
