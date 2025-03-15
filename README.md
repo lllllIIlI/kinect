@@ -1,4 +1,5 @@
 # Kinect 
+kinect를 이용한 원격 몸무게 측정
 ![Image](https://github.com/user-attachments/assets/b38e7d14-60fc-4619-b749-e27639dcd2e3)
 
 ###### Kinect 개발 Tool Download
