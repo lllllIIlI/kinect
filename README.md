@@ -1,12 +1,12 @@
 ###### Kinect 개발 Tool Download
-- Kinect for Windows SDK v1.8
-- Kinect for Windows Developer Toolkit v1.8
+###### - Kinect for Windows SDK v1.8
+###### - Kinect for Windows Developer Toolkit v1.8
 
 ###### Setting
-- 시작 > 모든 프로그램 > Kinect for Windows SDK v1.8 > Kinect Studio 1.8.0 실행
-- 시작 > 모든 프로그램 > Kinect for Windows SDK v1.8 > Developer Toolkit Browser v1.8.0(Kinect) 실행
+###### - 시작 > 모든 프로그램 > Kinect for Windows SDK v1.8 > Kinect Studio 1.8.0 실행
+###### - 시작 > 모든 프로그램 > Kinect for Windows SDK v1.8 > Developer Toolkit Browser v1.8.0(Kinect) 실행
 
-## DepthStream
+# DepthStream
 - 영상의 모양을 인식하고 크기와 거리정보를 포함하여 프로그램에 응용, 사용 할 수 있도록 정보를 제공.
 - DepthImageStream 클래스로 지정된 DepthStream 이라는 필드 사용.
 
