@@ -6,7 +6,7 @@ kinect를 이용한 원격 몸무게 측정
 
 ## 개발 환경
 <div>
-<img src="https://img.shields.io/badge/c++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white">
+<img src="https://img.shields.io/badge/c#-00599C?style=for-the-badge&logo=c#&logoColor=white">
 <img src="https://img.shields.io/badge/Visual Studio-5C2D91?style=flat&logo=Visual Studio&logoColor=white"/>
 </div>
 
