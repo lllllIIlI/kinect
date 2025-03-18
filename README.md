@@ -5,6 +5,11 @@ kinect를 이용한 원격 몸무게 측정
 
 
 ## 개발 환경
+<div>
+<img src="https://img.shields.io/badge/c++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white">
+<img src="https://img.shields.io/badge/Visual Studio 2022-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=purple">
+</div>
+
 Kinect 개발 Tool Download
 - Kinect for Windows SDK v1.8
 - Kinect for Windows Developer Toolkit v1.8
