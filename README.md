@@ -6,7 +6,7 @@ kinect를 이용한 원격 몸무게 측정
 
 ## 개발 환경
 <div>
-<img src="https://img.shields.io/badge/-C%23-23239120?style=flat&logo=Csharp&logoColor=white">
+<img src="https://img.shields.io/badge/-C%23-23239120?style=flat&logo=Csharp&logoColor=white">                // 배지 안 나옴 ㅜㅜ(shields.io에 C#, Visual Studio 배지가 없다)
 <img src="https://img.shields.io/badge/Visual Studio-5C2D91?style=flat&logo=Visual Studio&logoColor=white"/>
 </div>
 
