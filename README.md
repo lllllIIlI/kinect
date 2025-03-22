@@ -110,9 +110,15 @@ Setting
 ```
 
 2. 정확도 개선
-기존 코드
+기존 코드 (면적 측정 - MainWindow.xaml.cs)
 ```
-  float weight = (IPixel * IDist) / 1000000000;
-  textblock3.Text = string.Format("무게 : {0:0} kg", weight);
+  if (IPixel > 0)
+            {
+                textBlock1.Text = string.Format("픽셀 : {0}", IPixel);
+                textBlock2.Text = string.Format("평균 거리 : {0}", IDist / IPixel);
+
+                float weight = (IPixel * IDist) / 1000000000f; // 몸무게 추정식
+                textBlock3.Text = string.Format("추정 몸무게 : {0:0} kg", weight);
+            }
 ```
 
