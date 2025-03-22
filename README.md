@@ -121,4 +121,8 @@ Setting
                 textBlock3.Text = string.Format("무게 : {0:0} kg", weight);
             }
 ```
-<img >
+![Image](https://github.com/user-attachments/assets/b0b1fce3-4fdd-4364-915a-78e0511ea6cc)
+
+수정안 1
+1. 전신이 다 나와야 함 → 거리 제한 (3m)
+
