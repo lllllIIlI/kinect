@@ -60,7 +60,7 @@ namespace KC06
                  i16++, i32 += 4)
             {
                 int player = depthFrame[i16] & DepthImageFrame.PlayerIndexBitmask;
-                int nDiistance = depthFrame[i16] >> DepthImageFrame.PlayerIndexBitmaskWidth;
+                int nDistance = depthFrame[i16] >> DepthImageFrame.PlayerIndexBitmaskWidth;
                 SetRGB(playerCoded, i32, 0x00, 0x00, 0x00);
 
                 if (player > 0 && nPlayer <= 0) nPlayer = player;
