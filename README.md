@@ -6,7 +6,7 @@ kinect를 이용한 원격 몸무게 측정
 
 ## 개발 환경
 <div>
-<img src="https://img.shields.io/badge/-C%23-23239120?style=flat&logo=Csharp&logoColor=white">                <!-- 배지 안 나옴 ㅜㅜ(shields.io에 C#, Visual Studio 배지가 없다) --!>
+<img src="https://img.shields.io/badge/-C%23-23239120?style=flat&logo=Csharp&logoColor=white">                <!-- 배지 안 나옴(shields.io에 C#, Visual Studio 배지가 없다) --!>
 <img src="https://img.shields.io/badge/Visual Studio-5C2D91?style=flat&logo=Visual Studio&logoColor=white"/>
 </div>
 <br>
@@ -98,7 +98,7 @@ Setting
 5. 사용자 저장  ← 굳이 필요한가?
 6. 면적 측정
 
-## 개선사항 (= 희망사항 - kinect를 학교에서 대여할 수 없다)
+## 개선사항 (kinect가 없어 정확한 측정 불가)
 1. 키 측정 추가 → skeletonstream 사용 (정확 X - 상대적)
 ```
    // 키 계산 함수
@@ -121,4 +121,4 @@ Setting
                 textBlock3.Text = string.Format("무게 : {0:0} kg", weight);
             }
 ```
-
+<img >
