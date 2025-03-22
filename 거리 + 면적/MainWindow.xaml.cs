@@ -4,7 +4,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using Microsoft.Kinect;
 
-namespace KC04
+namespace KC00
 {
     public partial class MainWindow : Window
     {
