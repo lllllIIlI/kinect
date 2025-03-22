@@ -93,11 +93,19 @@ Setting
 ## 개발 과정
 1. 뎁스스트림 테스트
 2. 영상 모니터 출력
-3. 사용자 인덱스 추출
-4. 거리 측정
-5. 사용자 저장
+3. 사용자 인덱스 추출 ← 굳이 필요한가?
+4. 거리 측정 
+5. 사용자 저장  ← 굳이 필요한가?
 6. 면적 측정
 
-## 개선사항
-1. 키 측정 추가
-2. 정확도 개선
+## 개선사항 (= 희망사항 - kinect를 학교에서 대여할 수 없다)
+1. 키 측정 추가 → skeletonstream 사용 (정확 X - 상대적)
+```
+   // 키 계산 함수
+        double CalculateHeight(CameraSpacePoint head, CameraSpacePoint foot)
+        {
+            double heightInMeters = Math.Abs(head.Y - foot.Y);
+            return heightInMeters * 100; // 미터 -> 센티미터로 변환
+        }
+```
+3. 정확도 개선
