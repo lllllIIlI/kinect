@@ -108,4 +108,6 @@ Setting
             return heightInMeters * 100; // 미터 -> 센티미터로 변환
         }
 ```
-3. 정확도 개선
+
+2. 정확도 개선
+   
