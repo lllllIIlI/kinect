@@ -109,7 +109,7 @@ Setting
         }
 ```
 
-2. 정확도 개선
+2. 정확도 개선 <br>
 기존 코드 (면적 측정 - MainWindow.xaml.cs)
 ```
   if (IPixel > 0)
@@ -117,7 +117,7 @@ Setting
                 textBlock1.Text = string.Format("픽셀 : {0}", IPixel);
                 textBlock2.Text = string.Format("거리 : {0}", IDist / IPixel);
 
-                float weight = (IPixel * IDist) / 1000000000f; // 몸무게 추정식
+                float weight = (IPixel * IDist) / 1000000000f;
                 textBlock3.Text = string.Format("무게 : {0:0} kg", weight);
             }
 ```
@@ -125,4 +125,5 @@ Setting
 
 수정안 1
 1. 전신이 다 나와야 함 → 거리 제한 (3m)
-
+2. 사용자 전신이 안나오면 측정 X (etc. 사물에 사용자 신체 일부가 가려짐)
+3. 결과를 보며 가중치 변경
