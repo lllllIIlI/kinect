@@ -127,3 +127,46 @@ Setting
 1. 거리 제한 (3m)
 2. 사용자 전신이 안나오면 측정 X (etc. 사물에 사용자 신체 일부가 가려짐)
 3. ~~결과를 보며 가중치 변경~~
+
+```
+bool fullBodyDetected = false;
+
+void nui_SkeletonFrameReady(object sender, SkeletonFrameReadyEventArgs e)
+{
+    SkeletonFrame skeletonFrame = e.OpenSkeletonFrame();
+    if (skeletonFrame == null) return;
+
+    Skeleton[] skeletons = new Skeleton[skeletonFrame.SkeletonArrayLength];
+    skeletonFrame.CopySkeletonDataTo(skeletons);
+
+    fullBodyDetected = false;
+
+    foreach (Skeleton skeleton in skeletons)
+    {
+      if (skeleton.TrackingState == SkeletonTrackingState.Tracked)
+      {
+        // 상체와 하체가 모두 인식되었는지 확인
+        if (skeleton.Joints[JointType.Head].TrackingState == JointTrackingState.Tracked &&
+            skeleton.Joints[JointType.ShoulderCenter].TrackingState == JointTrackingState.Tracked &&
+            skeleton.Joints[JointType.HipCenter].TrackingState == JointTrackingState.Tracked)
+        {
+          fullBodyDetected = true;
+          break;
+        }
+      }
+    }
+}
+```
+
+GetPlayer() 에 조건 추가
+```
+if (player == nPlayer) // 해당 플레이어만 처리
+{
+    if (nDistance == 3000 && fullBodyDetected) // 정확히 3m이고 전신이 인식된 경우만 측정
+    {
+      IDist += nDistance;
+      IPixel += 1;
+      SetRGB(playerCoded, i32, 0xFF, 0xFF, 0xFF); // 흰색으로 픽셀 표시
+    }
+}
+```
