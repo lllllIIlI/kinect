@@ -69,7 +69,7 @@ namespace KC00
 
                 if (player == nPlayer) // 해당 플레이어만 처리
                 {
-                    if (nDistance == 3000) // 1m에서 3m 사이 거리만 측정
+                    if (nDistance == 3000) // 3m 거리에서만 측정
                     {
                         fullBodyDetected = true; // 전신이 인식됨
                         IDist += nDistance;
