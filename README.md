@@ -128,6 +128,7 @@ Setting
 2. 사용자 전신이 안나오면 측정 X (etc. 사물에 사용자 신체 일부가 가려짐)
 3. ~~결과를 보며 가중치 변경~~
 
+전신이 모두 나올 때 true return
 ```
 bool fullBodyDetected = false;
 
