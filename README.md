@@ -123,7 +123,7 @@ Setting
 ```
 ![Image](https://github.com/user-attachments/assets/b0b1fce3-4fdd-4364-915a-78e0511ea6cc)
 
-수정안 1
+개선안
 1. 전신이 다 나와야 함 → 거리 제한 (3m)
 2. 사용자 전신이 안나오면 측정 X (etc. 사물에 사용자 신체 일부가 가려짐)
-3. 결과를 보며 가중치 변경
+~~3. 결과를 보며 가중치 변경~~
