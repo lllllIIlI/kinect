@@ -4,7 +4,7 @@ kinect를 이용한 원격 몸무게 측정
 ![Image](https://github.com/user-attachments/assets/b38e7d14-60fc-4619-b749-e27639dcd2e3)
 
 
-## 개발 환경
+## 🛠 개발 환경
 <div>
 <img src="https://img.shields.io/badge/C%23-239120?style=flat&logo=csharp&logoColor=white"/>
 <img src="https://img.shields.io/badge/Visual%20Studio-5C2D91?style=flat&logo=visualstudio&logoColor=white"/>
@@ -20,12 +20,12 @@ Setting
 - 시작 > 모든 프로그램 > Kinect for Windows SDK v1.8 > Developer Toolkit Browser v1.8.0(Kinect) 실행
 
 
-## DepthStream
+## 🎥 DepthStream
 - 영상의 모양을 인식하고 크기와 거리정보를 포함하여 프로그램에 응용, 사용 할 수 있도록 정보를 제공.
 - DepthImageStream 클래스로 지정된 DepthStream 이라는 필드 사용.
 
 
-### DepthImageStream 클래스
+### 📚 DepthImageStream 클래스
 |멤버|기능|
 |--------------|---------------------|
 |Format|뎁스 데이터를 위한 포맷을 가져오거나 지정|
@@ -43,7 +43,7 @@ Setting
 |Enable|센서에서 뎁스 데이터를 사용. 작동 시작|
 |OpenNextFrame|뎁스스트림 안에서 다음 프레임 가져옴|
 
-### PixelFormats 클래스
+### 🎨 PixelFormats 클래스
 |멤버|기능|
 |--------------|---------------------|
 |Bgr101010|32BPP 를 사용하는 sRGB형식, 파랑, 녹색, 빨강에는 10BPP가 할당|
@@ -90,7 +90,7 @@ Setting
 |Rgba 128Float|128BPP를 사용하는 sRGB형식. 각 색 채널에는 32BPP씩 할당. 감마값 1.0|
 |Rgba64|64BPP를 사용하는 sRGB형식. 파랑, 녹색, 빨강, 알파에는 16BPP씩 할당. 감마값 1.0|
 
-## 개발 과정
+## 🏗 개발 과정
 1. 뎁스스트림 테스트
 2. 영상 모니터 출력
 3. 사용자 인덱스 추출
@@ -98,7 +98,7 @@ Setting
 5. 사용자 저장
 6. 면적 측정
 
-## 개선사항 (kinect가 없어 정확한 측정 불가)
+## ⚙️ 개선사항 (kinect가 없어 정확한 측정 불가)
 1. 키 측정 추가 → skeletonstream 사용 (정확 X - 상대적)
 ```
    // 키 계산 함수
